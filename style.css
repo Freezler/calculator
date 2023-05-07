@@ -1,0 +1,80 @@
+@font-face {
+	font-family: 'Patopian 1986';
+	src: url('Patopian 1986.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Square 721 Regular';
+	src: url('Square 721 Regular.otf') format('truetype');
+}
+
+body {
+	font-family: 'DS Digital', monospace;
+	background:
+		linear-gradient(red, transparent),
+		linear-gradient(to top left, lime, transparent),
+		linear-gradient(to top right, blue, transparent);
+	background-blend-mode: screen;
+	background-position: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+.calculator {
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	grid-gap: 0.1rem;
+	width: fit-content;
+	margin: 4rem auto;
+	border-radius: 2rem;
+	border-top: 4rem solid #85868d;
+	border-bottom: 3rem solid #85868d;
+	border-left: 0.4rem solid #85868d;
+	border-right: 0.4rem solid #85868d;
+	padding: 0.3rem;
+
+}
+
+.display {
+	grid-column: 1 / -1;
+	height: 3rem;
+	text-align: right;
+	background-color: #8c9f9e;
+	line-height: 3rem;
+	font-family: 'Patopian 1986', sans-serif;
+	text-align: end;
+	padding-right: 1rem;
+	width: auto;
+	color: rgb(125, 123, 123);
+	font-weight: 900;
+	font-size: 2rem;
+	border-radius: 0.5rem;
+}
+
+.btn {
+	grid-column: span 1;
+	background-color: #ccc;
+	border: none;
+	padding: 1rem;
+	width: 5rem;
+	cursor: pointer;
+	height: 4rem;
+	border-radius: 0.2rem;
+	justify-content: center;
+	font-size: 1.5rem;
+	user-select: none;
+}
+
+.casio {
+	position: relative;
+	background: #85868d;
+	height: 3rem;
+	text-align: center;
+	text-align: middle;
+	line-height: 3rem;
+	color: white;
+	font-size: 3rem;
+	font-family: "Square 721 Regular";
+	font-weight: 900;
+	padding: 0.5rem 0;
+}
